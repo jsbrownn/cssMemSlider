@@ -47,10 +47,14 @@ ul {
   display: none;
 }
 
+.images-list {
+  transition: all 0.5s ease;
+}
+
 .card {
   position: relative;
   background-color: #25282a;
-  transition: all 0.5s ease;
+  
 }
 
 #input1:checked ~ .card {
@@ -70,6 +74,7 @@ ul {
 .images-list__item {
   display: flex;
   flex-direction: column;
+
 }
 
 .images-list__item:has(#input2:checked) {
