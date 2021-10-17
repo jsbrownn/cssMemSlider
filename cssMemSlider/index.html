@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>CSS Mem Slider</title>
   </head>
   <body>
@@ -12,46 +13,60 @@
         <div class="view">
           <ul class="images-list">
             <li class="images-list__item">
-              <img src="./assets/images/css.png" alt="mem" class="mem-img" />
-              <div class="image-item__text">"CSS IS AWESOME"</div>
               <input type="radio" id="input1" name="input-anchor" class="input-anchor" checked />
+              <div class="card">
+                <div class="img-wrap">
+                  <img src="./assets/images/css.jpg" alt="mem" class="mem-img" />
+                </div>
+                <div class="image-item__text">"CSS IS AWESOME"</div>
+              </div>
             </li>
             <li class="images-list__item">
-              <img src="./assets/images/git.jpg" alt="mem" class="mem-img" />
-              <div class="image-item__text">Когда обьясняешь джуну как работает git</div>
               <input type="radio" id="input2" name="input-anchor" class="input-anchor" />
+              <div class="card">
+                <div class="img-wrap">
+                  <img src="./assets/images/git.jpg" alt="mem" class="mem-img" />
+                </div>
+                <div class="image-item__text">Когда обьясняешь джуну как работает git</div>
+              </div>
             </li>
             <li class="images-list__item">
-              <img src="./assets/images/off.jpg" alt="mem" class="mem-img" />
-              <div class="image-item__text">
-                "Уважаемые cтуденты !С 15 ноября по 17 ноября в вашем таске будет отключен JS. Приносим извинения за
-                предоставленные неудобства, учитесь как хотите "
-              </div>
               <input type="radio" id="input3" name="input-anchor" class="input-anchor" />
+              <div class="card">
+                <div class="img-wrap">
+                  <img src="./assets/images/off.jpeg" alt="mem" class="mem-img" />
+                </div>
+                <div class="image-item__text">
+                  "Уважаемые cтуденты !С 15 ноября по 17 ноября в вашем таске будет отключен JS. Приносим извинения за
+                  предоставленные неудобства, учитесь как хотите "
+                </div>
+              </div>
             </li>
             <li class="images-list__item">
-              <img src="./assets/images/vanillaJs.jpg" alt="mem" class="mem-img" />
-              <div class="image-item__text">
-                <p class="text-que">- Привет, потомки! Как у вас с фронтендом?</p>
-                <p class="text-ans">-Vanilla JS рулит, ваши фреймворки говно</p>
-                <p class="text">*Юра, мы все про*бали*</p>
-              </div>
               <input type="radio" id="input4" name="input-anchor" class="input-anchor" />
+              <div class="card">
+                <div class="img-wrap">
+                  <img src="./assets/images/frontend.jpg" alt="mem" class="mem-img" />
+                </div>
+                <div class="image-item__text">
+                  <p class="text">*Юра, мы все про*бали*</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
         <ul class="dots-list">
           <li class="dots__item">
-            <label for="input1"></label>
+            <label for="input1" tabindex="1"> <div class="dot"></div></label>
           </li>
           <li class="dots__item">
-            <label for="input2"></label>
+            <label for="input2" tabindex="2"><div class="dot"></div></label>
           </li>
           <li class="dots__item">
-            <label for="input3"></label>
+            <label for="input3" tabindex="3"><div class="dot"></div></label>
           </li>
           <li class="dots__item">
-            <label for="input4"></label>
+            <label for="input4" tabindex="4"><div class="dot"></div></label>
           </li>
         </ul>
       </div>
