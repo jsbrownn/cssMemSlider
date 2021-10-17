@@ -6,7 +6,7 @@ html {
 body {
   height: 100vh;
   background-color: #25282a;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 * {
@@ -32,7 +32,6 @@ ul {
   justify-content: center;
   max-width: 70vw;
   margin: 0 auto;
-  margin-top: 2%;
 }
 
 .view {
@@ -50,12 +49,12 @@ ul {
 
 .card {
   position: relative;
-  
   background-color: #25282a;
+  transition: all 0.5s ease;
 }
 
 #input1:checked ~ .card {
-  left: 0;
+  right: 0;
 }
 
 #input2:checked ~ .card {
@@ -81,6 +80,7 @@ ul {
 .img-wrap {
   width: 70vw;
   height: auto;
+  max-height: ;
 }
 
 .mem-img {
@@ -92,11 +92,12 @@ ul {
 
 .image-item__text {
   color: white;
+  max-width: 70%;
 }
 
 .dots-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 label {
@@ -107,12 +108,19 @@ label {
 
 label:hover .dot {
   border: 3px solid blueviolet;
+  background-color: blueviolet;
 }
 
-label.focus .dot {
+label:active .dot {
   background-color: yellowgreen;
-  transform: scale(1.2);
+
 }
+
+label:focus .dot {
+  background-color: yellowgreen;
+  
+}
+
 
 .dot {
   display: block;
@@ -120,4 +128,9 @@ label.focus .dot {
   height: 20px;
   border: 3px solid yellowgreen;
   border-radius: 50%;
+}
+
+
+@media screen and (max-width) {
+  
 }
