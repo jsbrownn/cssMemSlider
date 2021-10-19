@@ -36,7 +36,6 @@ ul {
 
 .view {
   overflow: hidden;
-  
 }
 
 .images-list {
@@ -47,39 +46,39 @@ ul {
   display: none;
 }
 
-
 .card {
-  position: relative;
   background-color: #25282a;
-  transition: all 500ms ease;
-  
+  position: relative;
+  transition: all 500ms ease ;
+  right: 0;
+  visibility:hidden;
 }
 
 #input1:checked ~ .card {
-  right: 0;
+  visibility:visible;
 }
 
 #input2:checked ~ .card {
   right: 100%;
+  visibility:visible;
 }
 #input3:checked ~ .card {
   right: 200%;
+  visibility:visible;
 }
 #input4:checked ~ .card {
   right: 300%;
+  visibility:visible;
 }
 
 .images-list__item {
   display: flex;
   flex-direction: column;
-
 }
-
 
 .img-wrap {
   width: 50vw;
   height: auto;
-
 }
 
 .mem-img {
@@ -111,14 +110,11 @@ label:hover .dot {
 
 label:active .dot {
   background-color: yellowgreen;
-
 }
 
 label:focus .dot {
   background-color: yellowgreen;
-  
 }
-
 
 .dot {
   display: block;
@@ -128,10 +124,9 @@ label:focus .dot {
   border-radius: 50%;
 }
 
-
-@media screen and (max-width:1333px) {
+@media screen and (max-width: 1333px) {
   .slider {
-    width:80vw;
+    width: 80vw;
   }
   .img-wrap {
     width: 80vw;
