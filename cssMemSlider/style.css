@@ -49,26 +49,27 @@ ul {
 .card {
   background-color: #25282a;
   position: relative;
-  transition: all 500ms ease ;
+  transition: opacity 1s ease ;
   right: 0;
-  visibility:hidden;
+  opacity:0;
 }
 
 #input1:checked ~ .card {
-  visibility:visible;
+  right: 0;
+  opacity:1;
 }
 
 #input2:checked ~ .card {
   right: 100%;
-  visibility:visible;
+  opacity:1;
 }
 #input3:checked ~ .card {
   right: 200%;
-  visibility:visible;
+  opacity:1;
 }
 #input4:checked ~ .card {
   right: 300%;
-  visibility:visible;
+  opacity:1;
 }
 
 .images-list__item {
