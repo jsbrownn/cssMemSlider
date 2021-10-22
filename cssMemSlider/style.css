@@ -30,13 +30,12 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 70vw;
+  width: 50vw;
   margin: 0 auto;
 }
 
 .view {
   overflow: hidden;
-  
 }
 
 .images-list {
@@ -48,23 +47,29 @@ ul {
 }
 
 .card {
-  position: relative;
   background-color: #25282a;
-  transition: all 0.5s ease;
+  position: relative;
+  transition: opacity 1s ease ;
+  right: 0;
+  opacity:0;
 }
 
 #input1:checked ~ .card {
   right: 0;
+  opacity:1;
 }
 
 #input2:checked ~ .card {
   right: 100%;
+  opacity:1;
 }
 #input3:checked ~ .card {
   right: 200%;
+  opacity:1;
 }
 #input4:checked ~ .card {
   right: 300%;
+  opacity:1;
 }
 
 .images-list__item {
@@ -72,15 +77,9 @@ ul {
   flex-direction: column;
 }
 
-.images-list__item:has(#input2:checked) {
-  right: 200%;
-  border: 1px solid red;
-}
-
 .img-wrap {
-  width: 70vw;
+  width: 50vw;
   height: auto;
-  max-height: ;
 }
 
 .mem-img {
@@ -92,7 +91,6 @@ ul {
 
 .image-item__text {
   color: white;
-  max-width: 70%;
 }
 
 .dots-list {
@@ -103,34 +101,35 @@ ul {
 label {
   display: block;
   cursor: pointer;
-  padding: 0 10px;
+  padding: 0 0.5rem;
 }
 
 label:hover .dot {
-  border: 3px solid blueviolet;
+  border: 0.2rem solid blueviolet;
   background-color: blueviolet;
 }
 
 label:active .dot {
   background-color: yellowgreen;
-
 }
 
 label:focus .dot {
   background-color: yellowgreen;
-  
 }
-
 
 .dot {
   display: block;
-  width: 20px;
-  height: 20px;
-  border: 3px solid yellowgreen;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.2rem solid yellowgreen;
   border-radius: 50%;
 }
 
-
-@media screen and (max-width) {
-  
+@media screen and (max-width: 1333px) {
+  .slider {
+    width: 80vw;
+  }
+  .img-wrap {
+    width: 80vw;
+  }
 }
